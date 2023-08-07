@@ -1,0 +1,65 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    background-color: #afeeee5b;
+    
+
+}
+#LoginBox{
+    padding: 20px;
+    background-color: #6198b9c9;
+    border-radius: 10px;
+    border: 1px solid #6c74a0;
+    
+    text-align: center;
+}
+#LoginBox button{
+    background-color: #233744c9;
+    border-color: #3a3d4e;
+    color:rgb(235, 231, 231);
+}
+.form-group{
+    margin-bottom: 10px;
+}
+#cadBox {
+    
+    min-width: 400px;
+    
+    padding: 20px;
+    background-color: #6198b9c9;
+    border-radius: 10px;
+    border: 1px solid #6c74a0;
+    box-sizing: border-box;
+    
+    text-align: left;
+}
+#cadBox h1{
+    text-align: center;
+}
+#alerta{
+    text-align: center;
+    color:red;
+    padding-bottom: 10px;
+}
+/*
+Azul Pastel Tranquilo:
+
+#AFEEEE (Pale Turquoise)
+#87CEFA (Light Sky Blue)
+#00BFFF (Deep Sky Blue)
+
+Para o Pale Turquoise (#AFEEEE):
+
+Texto em Preto (#000000) ou Cinza Escuro (#333333): Essas cores escuras contrastam bem com o azul claro do Pale Turquoise.
+Para o Light Sky Blue (#87CEFA):
+
+Texto em Preto (#000000) ou Cinza Escuro (#333333): Assim como com o Pale Turquoise, o contraste com tons escuros é eficaz.
+Para o Deep Sky Blue (#00BFFF):
+
+Texto em Branco (#FFFFFF) ou Cinza Claro (#D3D3D3): Cores claras criam um contraste forte com o Deep Sky Blue.
+
+*/
