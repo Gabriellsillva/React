@@ -1,0 +1,15 @@
+#buttonbar {
+    justify-content: right;
+    padding: 10px;
+}
+#buttonbar button{
+    width: fit-content;
+    margin-left: 5px;
+}
+#buttonbar input{
+    width: fit-content;
+    margin-right: 5px;
+}
+#corp{
+    background-color: rgba(0, 0, 0, 0.158);
+}

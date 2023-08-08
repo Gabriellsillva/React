@@ -16,6 +16,7 @@
             
             $_SESSION['UsuarioL'] = $row["id"];
             echo "Entrou no sistema";
+            header('Location: ../Pages/home.html');
 
             exit();
         }else{
