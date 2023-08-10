@@ -13,3 +13,21 @@
 #corp{
     background-color: rgba(0, 0, 0, 0.158);
 }
+#box{
+    padding-top: 15px;
+    padding-bottom: 35px;;
+}
+.form-box{
+    padding-bottom: 10px;
+}
+#fut{
+    background: linear-gradient(to bottom, rgb(190 208 208), rgba(0, 0, 0, 1));
+    justify-content: center;
+    height: 100px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    color:rgb(230, 230, 122);
+    font-size: larger;
+
+}

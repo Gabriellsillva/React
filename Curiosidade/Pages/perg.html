@@ -59,13 +59,16 @@
 
                 };
             }
+            handleAddClick = (event)=>{
+                window.location.href = "addperg.html";
+            };
             render(){
                 return(
                     <div id="corp" class="container">
                         <div id="buttonbar" class="row">
                             <input class="form-control" type="text"></input>
                             <button class="btn btn-dark">Procurar</button>
-                            <button class="btn btn-dark">Add</button>
+                            <button class="btn btn-dark" onClick={this.handleAddClick}>Add</button>
                             
                         </div>
                         <div class="row">

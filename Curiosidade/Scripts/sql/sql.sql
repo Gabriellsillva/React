@@ -25,16 +25,28 @@ CREATE TABLE categorias(
     nome TEXT,
 );
 
-CREATE TABLE perguntas (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(255) NOT NULL,
-    imagem VARCHAR(255),
-    conteudo TEXT,
-    autor int,
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ CREATE table alternativas(
+ 	id int PRIMARY KEY AUTO_INCREMENT,
+    idperg int,
+    alta varchar(255),
+    altb varchar(255),
+    altc varchar(255),
+    altd varchar(255),
+    FOREIGN KEY (idperg) REFERENCES perguntas(id)
+     
+ );
+ 
+ create table perguntas (
+ 	id int PRIMARY key AUTO_INCREMENT,
+    titulo varchar(255) NOT null,
+    autor varchar(255),
+    texto TEXT,
     categoria int,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    alterna int,
+    resposta varchar(1),
     status ENUM('aberta', 'fechada') DEFAULT 'aberta',
-    
+    FOREIGN KEY (alterna) REFERENCES alternativas(id),
     FOREIGN KEY (autor) REFERENCES usuarios(id),
     FOREIGN KEY (categoria) REFERENCES categorias(id)
-);
+ );
